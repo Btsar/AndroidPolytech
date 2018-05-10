@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422e2322-55f5-4c28-bdd5-6d016ce4a0d4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Livrables/Personas&amp;Scenarios.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Livrables/NewProject.bmpr" afterPath="$PROJECT_DIR$/Livrables/NewProject.bmpr" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,11 +48,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/LoginActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="194">
               <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Personas&amp;Scenarios.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Livrables/Personas&amp;Scenarios.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1988,17 +2000,18 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/Livrables/Personas&amp;Scenarios.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="793" />
     <option name="width" value="814" />
-    <option name="height" value="860" />
+    <option name="height" value="867" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -2025,7 +2038,22 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="GIP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GIP" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="GIP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GIP" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="Livrables" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
     </panes>
   </component>
@@ -2035,7 +2063,7 @@
     <property name="settings.editor.splitter.proportion" value="0.21645446" />
     <property name="device.picker.selection" value="Android_Accelerated_x86_Nougat" />
     <property name="android.profiler.active" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1525957425322" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1525986051620" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1525953051748" />
   </component>
   <component name="RunDashboard">
@@ -2401,7 +2429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525956063365</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Balsamiq">
+      <created>1525957529496</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1525957529496</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2447,7 +2482,8 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="initiate Firebase to project" />
     <MESSAGE value="initiate Firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="initiate Firebase" />
+    <MESSAGE value="Balsamiq" />
+    <option name="LAST_COMMIT_MESSAGE" value="Balsamiq" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2613,6 +2649,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Livrables/Personas&amp;Scenarios.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
