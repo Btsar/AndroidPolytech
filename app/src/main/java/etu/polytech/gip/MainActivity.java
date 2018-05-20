@@ -350,6 +350,10 @@ public class MainActivity extends BaseActivity implements
 
     private void updateUI(FirebaseUser user) {
         hideProgressDialog();
+        if(mAuth.getCurrentUser()!=null){
+            Intent intent = new Intent(this, ListMishapActivity.class);
+            startActivity(intent);
+        }
 //        if (user != null) {
 ////            mStatusTextView.setText(getString(R.string.emailpassword_status_fmt,
 ////                    user.getEmail(), user.isEmailVerified()));

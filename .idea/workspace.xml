@@ -10,15 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422e2322-55f5-4c28-bdd5-6d016ce4a0d4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,7 +76,7 @@
       <file leaf-file-name="ListMishapActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/ListMishapActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="68">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
@@ -92,21 +86,18 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2856">
-              <caret line="237" column="88" lean-forward="false" selection-start-line="237" selection-start-column="88" selection-end-line="237" selection-end-column="88" />
+            <state relative-caret-position="357">
+              <caret line="384" column="11" lean-forward="false" selection-start-line="384" selection-start-column="11" selection-end-line="384" selection-end-column="11" />
               <folding>
                 <element signature="e#2722#2763#0" expanded="true" />
-                <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#createAccount#0;class#MainActivity#0" expanded="false" />
                 <element signature="e#7502#7503#0" expanded="true" />
                 <element signature="e#7564#7565#0" expanded="true" />
                 <element signature="e#7933#7934#0" expanded="true" />
                 <element signature="e#7995#7996#0" expanded="true" />
-                <element signature="method#firebaseAuthWithGoogle#0;class#MainActivity#0" expanded="false" />
                 <element signature="method#validateForm#0;class#MainActivity#0" expanded="false" />
-                <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-                <element signature="e#15165#15166#0" expanded="true" />
-                <element signature="e#15231#15232#0" expanded="true" />
+                <element signature="e#15324#15325#0" expanded="true" />
+                <element signature="e#15390#15391#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,14 +113,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="127" column="64" lean-forward="false" selection-start-line="127" selection-start-column="64" selection-end-line="127" selection-end-column="64" />
+            <state relative-caret-position="510">
+              <caret line="140" column="53" lean-forward="false" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
               <folding>
                 <element signature="e#310#343#0" expanded="true" />
                 <element signature="e#368#403#0" expanded="true" />
@@ -153,11 +144,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="activity_list_mishap.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml">
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <element signature="e#757#782#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/BaseActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+            <state relative-caret-position="199">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,6 +209,7 @@
       <find>qui</find>
       <find>signIn</find>
       <find>onActi</find>
+      <find>mAuth</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2333,13 +2340,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="793" />
+    <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
@@ -2424,7 +2432,7 @@
     <property name="settings.editor.splitter.proportion" value="0.21645446" />
     <property name="device.picker.selection" value="Nexus_5_API_25" />
     <property name="android.profiler.active" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1526850931757" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1526852390968" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1526780737635" />
   </component>
   <component name="RecentsManager">
@@ -2876,7 +2884,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526840375935</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Feature : login email, gmail et facebook OK">
+      <created>1526850993820</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1526850993820</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2898,7 +2913,7 @@
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09125964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3033419" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837838" sideWeight="0.48393315" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.026992287" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2930,7 +2945,8 @@
     <MESSAGE value="Feature : implementation facebook et gmail en cours" />
     <MESSAGE value="Feature : implementation facebook et gmail en cours (opti mail)" />
     <MESSAGE value="Feature : struggling with emulator #PLS #AndroidHurts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : struggling with emulator #PLS #AndroidHurts" />
+    <MESSAGE value="Feature : login email, gmail et facebook OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : login email, gmail et facebook OK" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2943,17 +2959,14 @@
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="2" selection-end-line="208" selection-end-column="11" />
           <folding>
             <element signature="e#2722#2763#0" expanded="true" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#createAccount#0;class#MainActivity#0" expanded="false" />
             <element signature="e#7502#7503#0" expanded="true" />
             <element signature="e#7564#7565#0" expanded="true" />
             <element signature="e#7933#7934#0" expanded="true" />
             <element signature="e#7995#7996#0" expanded="true" />
-            <element signature="method#firebaseAuthWithGoogle#0;class#MainActivity#0" expanded="false" />
             <element signature="method#validateForm#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#15165#15166#0" expanded="true" />
-            <element signature="e#15231#15232#0" expanded="true" />
+            <element signature="e#15324#15325#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3026,17 +3039,14 @@
           <caret line="191" column="0" lean-forward="false" selection-start-line="191" selection-start-column="2" selection-end-line="208" selection-end-column="11" />
           <folding>
             <element signature="e#2722#2763#0" expanded="true" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
             <element signature="method#createAccount#0;class#MainActivity#0" expanded="false" />
             <element signature="e#7502#7503#0" expanded="true" />
             <element signature="e#7564#7565#0" expanded="true" />
             <element signature="e#7933#7934#0" expanded="true" />
             <element signature="e#7995#7996#0" expanded="true" />
-            <element signature="method#firebaseAuthWithGoogle#0;class#MainActivity#0" expanded="false" />
             <element signature="method#validateForm#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#15165#15166#0" expanded="true" />
-            <element signature="e#15231#15232#0" expanded="true" />
+            <element signature="e#15324#15325#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3259,33 +3269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/ListMishapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/BaseActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="51" lean-forward="false" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -3329,24 +3312,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/ListMishapActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="237" column="88" lean-forward="false" selection-start-line="237" selection-start-column="88" selection-end-line="237" selection-end-column="88" />
-          <folding>
-            <element signature="e#2722#2763#0" expanded="true" />
-            <element signature="method#onStart#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#createAccount#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#7502#7503#0" expanded="true" />
-            <element signature="e#7564#7565#0" expanded="true" />
-            <element signature="e#7933#7934#0" expanded="true" />
-            <element signature="e#7995#7996#0" expanded="true" />
-            <element signature="method#firebaseAuthWithGoogle#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#validateForm#0;class#MainActivity#0" expanded="false" />
-            <element signature="method#updateUI#0;class#MainActivity#0" expanded="false" />
-            <element signature="e#15165#15166#0" expanded="true" />
-            <element signature="e#15231#15232#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3355,8 +3333,8 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="127" column="64" lean-forward="false" selection-start-line="127" selection-start-column="64" selection-end-line="127" selection-end-column="64" />
+        <state relative-caret-position="510">
+          <caret line="140" column="53" lean-forward="false" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
           <folding>
             <element signature="e#310#343#0" expanded="true" />
             <element signature="e#368#403#0" expanded="true" />
@@ -3365,6 +3343,37 @@
             <element signature="e#1829#1851#0" expanded="true" />
             <element signature="e#2549#2579#0" expanded="true" />
             <element signature="e#5999#6024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/etu/polytech/gip/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="384" column="11" lean-forward="false" selection-start-line="384" selection-start-column="11" selection-end-line="384" selection-end-column="11" />
+          <folding>
+            <element signature="e#2722#2763#0" expanded="true" />
+            <element signature="method#createAccount#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#7502#7503#0" expanded="true" />
+            <element signature="e#7564#7565#0" expanded="true" />
+            <element signature="e#7933#7934#0" expanded="true" />
+            <element signature="e#7995#7996#0" expanded="true" />
+            <element signature="method#validateForm#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#15324#15325#0" expanded="true" />
+            <element signature="e#15390#15391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_list_mishap.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#757#782#0" expanded="true" />
           </folding>
         </state>
       </provider>
