@@ -10,6 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+
+
     <!-- Login progress -->
     <ProgressBar
         android:id="@+id/login_progress"
@@ -24,11 +26,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <LinearLayout
             android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gip_logo"/>
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -53,7 +62,7 @@
                     android:id="@+id/password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
+                    android:hint="Mot de passe"
                     android:imeActionId="6"
                     android:imeActionLabel="@string/action_sign_in_short"
                     android:imeOptions="actionUnspecified"
@@ -63,14 +72,63 @@
 
             </android.support.design.widget.TextInputLayout>
 
-            <Button
+            <!--<Button-->
+                <!--android:id="@+id/email_sign_in_button"-->
+                <!--style="?android:textAppearanceSmall"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:text="@string/action_sign_in"-->
+                <!--android:textStyle="bold" />-->
+
+            <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:id="@+id/email_sign_in_button"
-                style="?android:textAppearanceSmall"
+                style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
+                android:text="se connecter avec une adresse email"
+                tools:ignore="UnusedIds" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
-                android:textStyle="bold" />
+                android:gravity="center_horizontal">
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="50dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OU"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="50dp"
+                    android:background="#000"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/google_button"
+                style="@style/FirebaseUI.Button.AccountChooser.GoogleButton"
+                android:text="se connecter avec Gmail"
+                tools:ignore="UnusedIds" />
+
+            <com.firebase.ui.auth.util.ui.SupportVectorDrawablesButton
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/facebook_button"
+                style="@style/FirebaseUI.Button.AccountChooser.FacebookButton"
+                android:text="se connecter avec Facebook"
+                tools:ignore="UnusedIds" />
 
             <Button
                 android:id="@+id/email_sign_out_button"
