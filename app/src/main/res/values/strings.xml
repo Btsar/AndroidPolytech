@@ -15,4 +15,6 @@
         completions."
     </string>
     <string name="action_sign_out">Sign out</string>
+    <string name="objet_incident">Objet : Vitre cassée</string>
+    <string name="lieu_incident">Lieu : O+229</string>
 </resources>

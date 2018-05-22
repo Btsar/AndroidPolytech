@@ -78,7 +78,8 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:id="@+id/email_sign_in_button"
                 style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
-                android:text="se connecter avec une adresse email"
+                android:text="Se Connecter               "
+                android:textAlignment="center"
                 tools:ignore="UnusedIds" />
 
 
@@ -88,7 +89,7 @@
                 android:layout_height="match_parent"
                 android:textAllCaps="false"
                 style="?android:attr/borderlessButtonStyle"
-                android:text="vous n'êtes pas encore inscrit? cliquez ici pour créer un compte "
+                android:text="Pas encore inscrit?\nCliquez ici pour créer un compte "
                 android:textAlignment="center"/>
 
 
