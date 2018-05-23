@@ -33,6 +33,7 @@ import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.auth.UserInfo;
 
 public class MainActivity extends BaseActivity implements
         View.OnClickListener {
@@ -62,7 +63,7 @@ public class MainActivity extends BaseActivity implements
         // Buttons
         findViewById(R.id.email_sign_in_button).setOnClickListener(this);
         findViewById(R.id.email_sign_up_button).setOnClickListener(this);
-        findViewById(R.id.email_sign_out_button).setOnClickListener(this);
+        findViewById(R.id.sign_out_button_main).setOnClickListener(this);
         findViewById(R.id.google_button).setOnClickListener(this);
         findViewById(R.id.facebook_button).setOnClickListener(this);
 
@@ -381,10 +382,25 @@ public class MainActivity extends BaseActivity implements
             createAccount(mEmailField.getText().toString(), mPasswordField.getText().toString());
         } else if (i == R.id.email_sign_in_button) {
             signIn(mEmailField.getText().toString(), mPasswordField.getText().toString());
-        } else if (i == R.id.email_sign_out_button) {//TODO gérer ce truc comme il faut
-            signOut();
-            signOutGoogle();
-            signOutFacebook();
+        } else if (i == R.id.sign_out_button_main) {//TODO gérer ce truc comme il faut
+            for (UserInfo user: FirebaseAuth.getInstance().getCurrentUser().getProviderData()) {
+                switch (user.getProviderId()) {
+                    case "facebook.com":
+                        signOutFacebook();
+                        break;
+                    case "google.com":
+                        signOutGoogle();
+                        break;
+                    default:
+                        signOut();
+                        break;
+                }
+                if (mAuth.getCurrentUser()!=null){
+                    toastTxt("Déconnexion réussie");
+                }else{
+                    toastTxt("Déconnexion échouée");
+                }
+            }
         }else if (i == R.id.google_button){
             signInGoogle();
         }
