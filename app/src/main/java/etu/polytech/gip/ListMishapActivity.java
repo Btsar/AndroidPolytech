@@ -30,10 +30,10 @@ public class ListMishapActivity extends AppCompatActivity {
     private static final String TAG = "LogMeToDatabase";
     FirebaseAuth mAuth = FirebaseAuth.getInstance();//TODO Déconnexion plus tard
 
-    FirebaseFirestore mFirestore;
-    RecyclerView mMishapList;
+    private FirebaseFirestore mFirestore;
+    private RecyclerView mMishapList;
     List<MishapModel> mishapList;
-    MishapListAdapter mMishapAdapter;
+    private MishapListAdapter mMishapAdapter;
 
     //Buttons
     FloatingActionButton addMishap;
@@ -72,10 +72,17 @@ public class ListMishapActivity extends AppCompatActivity {
 //                }
 
                 for (DocumentChange d: queryDocumentSnapshots.getDocumentChanges()){
-                    MishapModel mishap = d.getDocument().toObject(MishapModel.class);
-                    mishapList.add(mishap);
 
-                    mMishapAdapter.notifyDataSetChanged();
+                    if(d.getType() == DocumentChange.Type.ADDED){
+                        MishapModel mishap = d.getDocument().toObject(MishapModel.class);
+                        mishapList.add(mishap);
+
+                        mMishapAdapter.notifyDataSetChanged();
+
+//                        String data = d.getDocument().getString("description");
+//                        Log.d(TAG,"Description : "+ data);
+                    }
+
                 }
             }
         });
