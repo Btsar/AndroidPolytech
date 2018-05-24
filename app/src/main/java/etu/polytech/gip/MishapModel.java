@@ -10,12 +10,13 @@ public class MishapModel {
      String date;
      String title;
      String building;
+     String distance;
 
     public MishapModel(){
 
     }
 
-    public MishapModel(String location, String description, String type, String severity, String time, String date, String title, String building ){
+    public MishapModel(String location, String description, String type, String severity, String time, String date, String title, String building, String distance){
         this.location = location;
         this.description = description;
         this.type = type;
@@ -24,6 +25,7 @@ public class MishapModel {
         this.date = date;
         this.title = title;
         this.building = building;
+        this.distance = distance;
     }
 
     public String getLocation() {
@@ -49,6 +51,8 @@ public class MishapModel {
     public String getDate() {
         return date;
     }
+
+    public String getDistance() { return distance; }
 
     public void setLocation(String location) {
         this.location = location;
@@ -85,6 +89,8 @@ public class MishapModel {
     public String getBuilding() {
         return building;
     }
+
+    public void setDistance (String distance) { this.distance = distance; }
 
     public void setBuilding(String building) {
         this.building = building;

@@ -1,6 +1,7 @@
 package etu.polytech.gip;
 
 import android.content.Intent;
+import android.location.Location;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,14 +41,12 @@ public class FormMishapActivity extends AppCompatActivity  {
 
     FirebaseFirestore mFirestore;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_mishap);
 
         mFirestore = FirebaseFirestore.getInstance();
-
         sendMishap = (Button) findViewById(R.id.sendMishap);
         locationMishap = (EditText) findViewById(R.id.locationMishap);
         descriptionMishap = (EditText) findViewById(R.id.descriptionBox);
@@ -68,6 +67,15 @@ public class FormMishapActivity extends AppCompatActivity  {
                 String title = titleMishap.getText().toString();
                 String building = buildingMishap.getText().toString();
 
+                /*
+                Location localisation =  gps2Activity.getPosition();
+                Double doubleLatitude = localisation.getLatitude();
+                Double doubleLongitude = localisation.getLongitude();
+
+                String latitude = doubleLatitude.toString();
+                String longitude = doubleLongitude.toString();
+                */
+
                 Map<String,String> mishapForFirestore = new HashMap<>();
                 mishapForFirestore.put("location",location);
                 mishapForFirestore.put("description",description);
@@ -77,6 +85,9 @@ public class FormMishapActivity extends AppCompatActivity  {
                 mishapForFirestore.put("date",date);
                 mishapForFirestore.put("title",title);
                 mishapForFirestore.put("building",building);
+
+                //mishapForFirestore.put("latitude", latitude);
+                //mishapForFirestore.put("longitude", longitude);
 
                 mFirestore.collection("mishaps").add(mishapForFirestore).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
