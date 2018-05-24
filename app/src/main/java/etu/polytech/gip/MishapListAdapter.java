@@ -1,6 +1,7 @@
 package etu.polytech.gip;
 
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -22,7 +23,9 @@ public class MishapListAdapter extends RecyclerView.Adapter<MishapListAdapter.Vi
 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item,parent,false);
+        Context context = parent.getContext();
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.list_item,parent,false);
         return new ViewHolder(view);
     }
 

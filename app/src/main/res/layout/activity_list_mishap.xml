@@ -36,28 +36,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioDate"
             android:layout_width="26dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Date" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioType"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Type" />
 
-        <RadioButton
+        <CheckBox
             android:id="@+id/radioImportance"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Importance"
-            tools:layout_editor_absoluteX="191dp"
-            tools:layout_editor_absoluteY="144dp" />
+            android:text="Importance" />
 
         <SearchView
             android:id="@+id/searchBar"

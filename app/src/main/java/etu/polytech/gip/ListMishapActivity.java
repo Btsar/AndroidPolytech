@@ -45,14 +45,16 @@ public class ListMishapActivity extends AppCompatActivity {
 
         addMishap = (FloatingActionButton) findViewById(R.id.addMishapButton);
         mMishapList = (RecyclerView) findViewById(R.id.listOfAllMishap);
-        mMishapList.setHasFixedSize(true);
-        mMishapList.setLayoutManager(new LinearLayoutManager(this));
-        mMishapList.setAdapter(mMishapAdapter);
+        //mMishapList.setHasFixedSize(true);
+
+
 
         mFirestore = FirebaseFirestore.getInstance();
 
-        mishapList = new ArrayList<>();
-        mMishapAdapter = new MishapListAdapter(mishapList);
+        this.mishapList = new ArrayList<>();
+        this.mMishapAdapter = new MishapListAdapter(this.mishapList);
+        this.mMishapList.setAdapter(mMishapAdapter);
+        this.mMishapList.setLayoutManager(new LinearLayoutManager(this));
 
         mFirestore.collection("mishaps").addSnapshotListener(new EventListener<QuerySnapshot>() {
 
