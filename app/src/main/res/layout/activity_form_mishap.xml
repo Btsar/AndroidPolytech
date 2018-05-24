@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="236dp"
-        android:layout_height="14dp"
+        android:layout_height="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily=""
@@ -39,7 +39,7 @@
         android:id="@+id/imageOfTheTypeOfIncident"
         android:layout_width="75dp"
         android:layout_height="65dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="56dp"
         android:background="@layout/imageview_border"
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,10 +64,16 @@
         android:id="@+id/TextSalle"
         android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="Salle"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
+        app:layout_constraintEnd_toStartOf="@+id/locationMishap"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextBatiment" />
 
     <TextView
@@ -79,17 +85,16 @@
         android:text='"description type"'
         android:textSize="15dp"
         app:layout_constraintStart_toEndOf="@+id/imageOfTheTypeOfIncident"
-        app:layout_constraintTop_toTopOf="@+id/imageOfTheTypeOfIncident" />
+        app:layout_constraintTop_toTopOf="@+id/imageOfTheTypeOfIncident"
+        android:layout_marginLeft="12dp" />
 
     <TextView
         android:id="@+id/TextImportance"
         android:layout_width="wrap_content"
         android:layout_height="27dp"
-        android:layout_marginTop="12dp"
         android:text="Urgence"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextSalle" />
 
@@ -99,7 +104,7 @@
         android:layout_height="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,14 +115,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Un peu" />
+            android:text="Basse" />
 
         <RadioButton
             android:id="@+id/severityN"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Beaucoup" />
+            android:text="Moyenne" />
 
         <RadioButton
             android:id="@+id/severityH"
@@ -132,12 +137,14 @@
         android:id="@+id/locationMishap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:ems="10"
         android:hint="Ex: O+107"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="@+id/TextSalle"
-        app:layout_constraintStart_toEndOf="@+id/TextSalle" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/descriptionBox"
@@ -167,40 +174,59 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/TitreMishap"
+        android:id="@+id/titleMishap"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:ems="10"
+        android:hint="Ex: prise en panne"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="@+id/TitreText"
-        app:layout_constraintStart_toEndOf="@+id/TitreText" />
+        app:layout_constraintBottom_toTopOf="@+id/buildingMishap"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/batimentMishap"
+        android:id="@+id/buildingMishap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:ems="10"
+        android:hint="Ex: Templier"
         android:inputType="textPersonName"
-        android:text="Ex : Templier"
-        app:layout_constraintBottom_toBottomOf="@+id/TextBatiment"
-        app:layout_constraintStart_toEndOf="@+id/TextBatiment" />
+        app:layout_constraintBottom_toTopOf="@+id/locationMishap"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/TextBatiment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:text="Batiment"
-        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
-        app:layout_constraintTop_toBottomOf="@+id/TitreMishap" />
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/buildingMishap"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TitreText" />
 
     <TextView
         android:id="@+id/TitreText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Titre"
-        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/titleMishap"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageOfTheTypeOfIncident" />
 
 </android.support.constraint.ConstraintLayout>

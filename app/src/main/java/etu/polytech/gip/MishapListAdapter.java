@@ -38,6 +38,8 @@ public class MishapListAdapter extends RecyclerView.Adapter<MishapListAdapter.Vi
         holder.txtSeverity.setText(mishapModelList.get(position).getSeverity());
         holder.txtTime.setText(mishapModelList.get(position).getTime());
         holder.txtDate.setText(mishapModelList.get(position).getDate());
+        holder.txtTitle.setText(mishapModelList.get(position).getTitle());//TODO mettre seulement quand on touchera aux fragments
+        holder.txtBuilding.setText(mishapModelList.get(position).getBuilding());
     }
 
     @Override
@@ -55,6 +57,8 @@ public class MishapListAdapter extends RecyclerView.Adapter<MishapListAdapter.Vi
         public TextView txtSeverity;
         public TextView txtTime;
         public TextView txtDate;
+        public TextView txtTitle;
+        public TextView txtBuilding;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -66,6 +70,8 @@ public class MishapListAdapter extends RecyclerView.Adapter<MishapListAdapter.Vi
             txtSeverity = (TextView) anotherView.findViewById(R.id.severityItem);
             txtTime = (TextView) anotherView.findViewById(R.id.timeItem);
             txtDate = (TextView) anotherView.findViewById(R.id.dateItem);
+            txtTitle = (TextView) anotherView.findViewById(R.id.titleItem);
+            txtBuilding = (TextView) anotherView.findViewById(R.id.buildingItem);
         }
     }
 }

@@ -8,18 +8,22 @@ public class MishapModel {
      String severity;
      String time;
      String date;
+     String title;
+     String building;
 
     public MishapModel(){
 
     }
 
-    public MishapModel(String location, String description, String type, String severity, String time, String date ){
+    public MishapModel(String location, String description, String type, String severity, String time, String date, String title, String building ){
         this.location = location;
         this.description = description;
         this.type = type;
         this.severity = severity;
         this.time = time;
         this.date = date;
+        this.title = title;
+        this.building = building;
     }
 
     public String getLocation() {
@@ -68,6 +72,22 @@ public class MishapModel {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getBuilding() {
+        return building;
+    }
+
+    public void setBuilding(String building) {
+        this.building = building;
     }
 
 

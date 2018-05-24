@@ -30,6 +30,8 @@ public class FormMishapActivity extends AppCompatActivity  {
     EditText descriptionMishap;
     TextView typeMishap;
     RadioGroup severityMishap;
+    EditText titleMishap;
+    EditText buildingMishap;
     Date dateAndroid = new Date();
 
     FirebaseFirestore mFirestore;
@@ -47,6 +49,8 @@ public class FormMishapActivity extends AppCompatActivity  {
         descriptionMishap = (EditText) findViewById(R.id.descriptionBox);
         typeMishap = (TextView) findViewById(R.id.typeOfTheIncidentText);
         severityMishap = (RadioGroup) findViewById(R.id.severityChoice);
+        titleMishap = (EditText) findViewById(R.id.titleMishap);
+        buildingMishap = (EditText) findViewById(R.id.buildingMishap);
 
         sendMishap.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +61,8 @@ public class FormMishapActivity extends AppCompatActivity  {
                 String severity = onRadioButtonClicked(findViewById(severityMishap.getCheckedRadioButtonId()));
                 String time = DateFormat.getTimeInstance(DateFormat.SHORT).format(dateAndroid);
                 String date = DateFormat.getDateInstance(DateFormat.SHORT).format(dateAndroid);
+                String title = titleMishap.getText().toString();
+                String building = buildingMishap.getText().toString();
 
                 Map<String,String> mishapForFirestore = new HashMap<>();
                 mishapForFirestore.put("location",location);
@@ -65,6 +71,8 @@ public class FormMishapActivity extends AppCompatActivity  {
                 mishapForFirestore.put("severity",severity);
                 mishapForFirestore.put("time",time);
                 mishapForFirestore.put("date",date);
+                mishapForFirestore.put("title",title);
+                mishapForFirestore.put("building",building);
 
                 mFirestore.collection("mishaps").add(mishapForFirestore).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
@@ -92,11 +100,11 @@ public class FormMishapActivity extends AppCompatActivity  {
         switch(view.getId()) {
             case R.id.severityH:
                 if (checked)
-                    return "Élevée";
+                    return "Haute";
                     break;
             case R.id.severityN:
                 if (checked)
-                    return "Moyenen";
+                    return "Moyenne";
                     break;
             case R.id.severityL:
                 if (checked)

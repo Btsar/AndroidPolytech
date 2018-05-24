@@ -32,7 +32,7 @@
             android:value="@string/facebook_app_id"
             tools:replace="android:value" />
 
-        <activity android:name=".FormMishapActivity"></activity>
+        <activity android:name=".FormMishapActivity" />
     </application>
 
 </manifest>

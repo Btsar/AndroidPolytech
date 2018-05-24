@@ -72,4 +72,20 @@
         android:contentDescription="sdq"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
+    <TextView
+        android:id="@+id/titleItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/descriptionItem"
+        android:layout_alignStart="@+id/dateItem"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/buildingItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/descriptionItem"
+        android:layout_alignStart="@+id/severityItem"
+        android:text="TextView" />
+
 </RelativeLayout>

@@ -47,8 +47,6 @@ public class ListMishapActivity extends AppCompatActivity {
         mMishapList = (RecyclerView) findViewById(R.id.listOfAllMishap);
         //mMishapList.setHasFixedSize(true);
 
-
-
         mFirestore = FirebaseFirestore.getInstance();
 
         this.mishapList = new ArrayList<>();
@@ -63,27 +61,23 @@ public class ListMishapActivity extends AppCompatActivity {
                 if (e!=null){
                     Log.d(TAG,"Erreur : "+ e.getMessage());
                 }
-//TODO this is bad implementation >> reload all database each time
-//                for (DocumentSnapshot d: queryDocumentSnapshots){
-//                    String location = d.getString("location");
-//                    String description = d.getString("description");
-//                    String type = d.getString("type");
-//                    String severity = d.getString("severity");
-//                    String time = d.getString("time");
-//                    String date = d.getString("date");
-//                }
 
                 for (DocumentChange d: queryDocumentSnapshots.getDocumentChanges()){
 
-                    if(d.getType() == DocumentChange.Type.ADDED){
+                    if(d.getType() == DocumentChange.Type.ADDED) {
                         MishapModel mishap = d.getDocument().toObject(MishapModel.class);
                         mishapList.add(mishap);
-
                         mMishapAdapter.notifyDataSetChanged();
+                    }else if(d.getType() == DocumentChange.Type.REMOVED){
+                        MishapModel mishap = d.getDocument().toObject(MishapModel.class);
+                        mishapList.remove(mishap);
+                        mMishapAdapter.notifyDataSetChanged();
+                    }
+
 
 //                        String data = d.getDocument().getString("description");
 //                        Log.d(TAG,"Description : "+ data);
-                    }
+//                    }
 
                 }
             }
