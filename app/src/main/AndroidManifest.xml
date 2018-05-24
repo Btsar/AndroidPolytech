@@ -35,6 +35,7 @@
             tools:replace="android:value" />
 
         <activity android:name=".FormMishapActivity" />
+        <activity android:name=".TypeListActivity"></activity>
         <activity android:name=".Gps2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

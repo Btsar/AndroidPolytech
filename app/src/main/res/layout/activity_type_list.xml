@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TypeListActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="          Veuillez choisir un type d'incident"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOrdi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ordi"
+        app:layout_constraintEnd_toEndOf="@+id/buttonImpr"
+        app:layout_constraintTop_toBottomOf="@+id/buttonImpr" />
+
+    <Button
+        android:id="@+id/buttonChauff"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/chauff"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonImpr"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/impr"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCafe"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCafe" />
+
+    <Button
+        android:id="@+id/buttonProbl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/probl"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOrdi"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrdi" />
+
+    <Button
+        android:id="@+id/buttonCafe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cafe"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonAutres"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/autres"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChat"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChat" />
+
+    <Button
+        android:id="@+id/buttonElec"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/elec"
+        app:layout_constraintEnd_toEndOf="@+id/buttonChauff"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChauff" />
+
+    <Button
+        android:id="@+id/buttonChat"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/chats"
+        app:layout_constraintEnd_toEndOf="@+id/buttonElec"
+        app:layout_constraintTop_toBottomOf="@+id/buttonElec" />
+
+</android.support.constraint.ConstraintLayout>

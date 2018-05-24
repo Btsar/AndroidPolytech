@@ -88,7 +88,7 @@ public class ListMishapActivity extends AppCompatActivity {
         addMishap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), FormMishapActivity.class);
+                Intent intent = new Intent(v.getContext(), TypeListActivity.class);
                 startActivity(intent);
             }
         });

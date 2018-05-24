@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -27,9 +28,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.lang.Integer.parseInt;
+
 
 public class FormMishapActivity extends AppCompatActivity  {
 
+    ImageView typePic;
     Button sendMishap;
     EditText locationMishap;
     EditText descriptionMishap;
@@ -46,7 +50,10 @@ public class FormMishapActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_mishap);
 
+       //Intent i = getIntent();
         mFirestore = FirebaseFirestore.getInstance();
+
+        typePic = (ImageView) findViewById(R.id.imageOfTheTypeOfIncident);
         sendMishap = (Button) findViewById(R.id.sendMishap);
         locationMishap = (EditText) findViewById(R.id.locationMishap);
         descriptionMishap = (EditText) findViewById(R.id.descriptionBox);
@@ -54,13 +61,17 @@ public class FormMishapActivity extends AppCompatActivity  {
         severityMishap = (RadioGroup) findViewById(R.id.severityChoice);
         titleMishap = (EditText) findViewById(R.id.titleMishap);
         buildingMishap = (EditText) findViewById(R.id.buildingMishap);
+        typeMishap.setText(getIntent().getExtras().getString("txt"));
+        typePic.setImageResource(getIntent().getExtras().getInt("photo"));
 
         sendMishap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                String type = typeMishap.getText().toString();
                 String location = locationMishap.getText().toString();
                 String description = descriptionMishap.getText().toString();
-                String type = typeMishap.getText().toString();
+
                 String severity = onRadioButtonClicked(findViewById(severityMishap.getCheckedRadioButtonId()));
                 String time = DateFormat.getTimeInstance(DateFormat.SHORT).format(dateAndroid);
                 String date = DateFormat.getDateInstance(DateFormat.SHORT).format(dateAndroid);
