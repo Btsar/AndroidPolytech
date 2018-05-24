@@ -23,10 +23,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
-        <LinearLayout
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listOfAllMishap"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="wrap_content" />
     </ScrollView>
 
     <LinearLayout
@@ -71,7 +71,7 @@
     </LinearLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/addMishapButton"
         android:layout_width="54dp"
         android:layout_height="71dp"
         android:layout_marginBottom="16dp"

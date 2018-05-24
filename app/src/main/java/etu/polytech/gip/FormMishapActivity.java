@@ -109,12 +109,4 @@ public class FormMishapActivity extends AppCompatActivity  {
     private void toastTxt(String txt){
         Toast.makeText(this,txt,Toast.LENGTH_SHORT).show();
     }
-//    @Override
-//    public void onClick(View v) {
-//        int i = v.getId();
-//        if(i == R.id.sendMishap){
-//            Intent intent = new Intent(this, ListMishapActivity.class);
-//            startActivity(intent);
-//        }
-//    }
 }
