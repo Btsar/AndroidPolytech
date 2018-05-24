@@ -9,16 +9,14 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="236dp"
-        android:layout_height="wrap_content"
+        android:layout_height="14dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:fontFamily=""
         android:gravity="center"
         android:text="Déclarer un incident"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:fontFamily=""
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,158 +34,110 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <View
-        android:layout_width="1dp"
-        android:layout_height="251dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:background="#a40404"
-        app:layout_constraintBottom_toTopOf="@+id/descriptionBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageOfTheTypeOfIncident"
         android:layout_width="75dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="68dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="44dp"
         android:background="@layout/imageview_border"
         android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gip_logo"/>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="84dp"
-        android:text="Type d'incident"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/gip_logo" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="28dp"
-        android:text="Description"
+        android:layout_marginBottom="4dp"
+        android:text="Détails"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/descriptionBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/TextSalle"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
-        android:text="Lieu"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
+        android:text="Salle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
+        app:layout_constraintTop_toBottomOf="@+id/TextBatiment" />
 
     <TextView
         android:id="@+id/typeOfTheIncidentText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
         android:text='"description type"'
         android:textSize="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/locationMishap"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageOfTheTypeOfIncident" />
+        app:layout_constraintStart_toEndOf="@+id/imageOfTheTypeOfIncident"
+        app:layout_constraintTop_toTopOf="@+id/imageOfTheTypeOfIncident" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/TextImportance"
         android:layout_width="wrap_content"
-        android:layout_height="21dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:text="Importance"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:text="Urgence"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/severityChoice"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/TextSalle" />
 
     <RadioGroup
         android:id="@+id/severityChoice"
-        android:layout_width="132dp"
-        android:layout_height="105dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginRight="88dp"
+        android:layout_width="322dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/descriptionBox"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/locationMishap"
-        app:layout_constraintVertical_bias="0.2">
-
-        <RadioButton
-            android:id="@+id/severityH"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Élevée" />
-
-        <RadioButton
-            android:id="@+id/severityN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Moyenne" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextImportance">
 
         <RadioButton
             android:id="@+id/severityL"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Basse" />
+            android:text="Un peu" />
+
+        <RadioButton
+            android:id="@+id/severityN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Beaucoup" />
+
+        <RadioButton
+            android:id="@+id/severityH"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Infiniment" />
+
     </RadioGroup>
 
     <EditText
         android:id="@+id/locationMishap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
+        android:layout_marginBottom="-16dp"
         android:ems="10"
         android:hint="Ex: O+107"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageOfTheTypeOfIncident" />
+        app:layout_constraintBottom_toBottomOf="@+id/TextSalle"
+        app:layout_constraintStart_toEndOf="@+id/TextSalle" />
 
     <EditText
         android:id="@+id/descriptionBox"
@@ -215,5 +165,42 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/TitreMishap"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/TitreText"
+        app:layout_constraintStart_toEndOf="@+id/TitreText" />
+
+    <EditText
+        android:id="@+id/batimentMishap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ex : Templier"
+        app:layout_constraintBottom_toBottomOf="@+id/TextBatiment"
+        app:layout_constraintStart_toEndOf="@+id/TextBatiment" />
+
+    <TextView
+        android:id="@+id/TextBatiment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Batiment"
+        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
+        app:layout_constraintTop_toBottomOf="@+id/TitreMishap" />
+
+    <TextView
+        android:id="@+id/TitreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Titre"
+        app:layout_constraintEnd_toEndOf="@+id/imageOfTheTypeOfIncident"
+        app:layout_constraintTop_toBottomOf="@+id/imageOfTheTypeOfIncident" />
 
 </android.support.constraint.ConstraintLayout>
