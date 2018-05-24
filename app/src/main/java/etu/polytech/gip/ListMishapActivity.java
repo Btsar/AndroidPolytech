@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
@@ -28,7 +31,6 @@ import javax.annotation.Nullable;
 public class ListMishapActivity extends AppCompatActivity {
 
     private static final String TAG = "LogMeToDatabase";
-    FirebaseAuth mAuth = FirebaseAuth.getInstance();//TODO Déconnexion plus tard
 
     private FirebaseFirestore mFirestore;
     private RecyclerView mMishapList;
@@ -92,4 +94,17 @@ public class ListMishapActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.log_out_button, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        return super.onOptionsItemSelected(item);
+    }
 }
