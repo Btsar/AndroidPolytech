@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/dateItem"
-        android:layout_marginEnd="105dp"
+        android:layout_marginEnd="90dp"
         android:text="TextView" />
 
     <TextView
@@ -40,7 +40,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="135dp"
         android:layout_marginTop="40dp"
-        android:text="TextView" />
+        android:text="TextView"
+        android:background="@color/fondZoneText"/>
 
     <TextView
         android:id="@+id/locationItem"
@@ -87,5 +88,21 @@
         android:layout_alignBottom="@+id/descriptionItem"
         android:layout_alignStart="@+id/severityItem"
         android:text="TextView" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="?android:attr/listDivider" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?android:attr/listDivider" />
 
 </RelativeLayout>
