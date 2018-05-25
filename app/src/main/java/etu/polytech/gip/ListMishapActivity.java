@@ -1,6 +1,10 @@
 package etu.polytech.gip;
 
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.location.Criteria;
+import android.location.LocationManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,6 +54,50 @@ public class ListMishapActivity extends AppCompatActivity {
         //mMishapList.setHasFixedSize(true);
 
         mFirestore = FirebaseFirestore.getInstance();
+
+        /* Il faut puor chaque élément de la base de donné ajouter un alertReceiver
+        Double longitude = Double.parseDouble();
+        Double latitude =  Double.parseDouble();
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteres = new Criteria();
+        criteres.setAccuracy(Criteria.ACCURACY_FINE);
+        criteres.setCostAllowed(true);
+        criteres.setPowerRequirement(Criteria.POWER_HIGH);
+        String fournisseur = locationManager.getBestProvider(criteres, true);
+        Intent intent = new Intent(this, AlertReceiver.class);
+        PendingIntent pending = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        try {
+            locationManager.requestLocationUpdates(fournisseur,
+                    10000,   // 10 sec
+                    10, this);
+        }
+        catch (SecurityException e) {}
+        //Pour chaque element de de la list ajouter alerte + clacul de la distance
+        try {
+            locationManager.addProximityAlert(longitude, latitude, 10, -1, pending);
+        } catch (SecurityException e) {}
+
+        public int getDistance (String latitudeIncident, String longitudeIncident) {
+        Location location = this.getPosition();
+
+        double latitude0 = convertRad(Double.parseDouble(latitudeIncident));
+        double longitude0 = convertRad(Double.parseDouble(longitudeIncident));
+
+        double latitude1 = convertRad(location.getLatitude());
+        double longitude1 = convertRad(location.getLongitude());
+
+        int R = 6378000; //Rayon de la terre en mètre
+
+
+
+        int distance = (int) (R * (Math.PI/2 - Math.asin( Math.sin(latitude0) * Math.sin(latitude1) + Math.cos(longitude0 - longitude1) * Math.cos(longitude1) * Math.cos(longitude0))));
+        return distance;
+        }
+
+        private double convertRad (double input){
+            return (Math.PI * input)/180;
+        }
+        */
 
         this.mishapList = new ArrayList<>();
         this.mMishapAdapter = new MishapListAdapter(this.mishapList);

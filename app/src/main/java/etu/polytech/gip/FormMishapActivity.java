@@ -1,7 +1,10 @@
 package etu.polytech.gip;
 
+import android.content.Context;
 import android.content.Intent;
+import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationManager;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -42,6 +45,7 @@ public class FormMishapActivity extends AppCompatActivity  {
     EditText titleMishap;
     EditText buildingMishap;
     Date dateAndroid = new Date();
+    Location localisation;
 
     FirebaseFirestore mFirestore;
 
@@ -63,7 +67,18 @@ public class FormMishapActivity extends AppCompatActivity  {
         buildingMishap = (EditText) findViewById(R.id.buildingMishap);
         typeMishap.setText(getIntent().getExtras().getString("txt"));
         typePic.setImageResource(getIntent().getExtras().getInt("photo"));
-
+/*
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteres = new Criteria();
+        criteres.setAccuracy(Criteria.ACCURACY_FINE);
+        criteres.setCostAllowed(true);
+        criteres.setPowerRequirement(Criteria.POWER_HIGH);
+        String fournisseur = locationManager.getBestProvider(criteres, true);
+        try {
+            this.localisation = locationManager.getLastKnownLocation(fournisseur);
+        }
+        catch (SecurityException e) {}
+*/
         sendMishap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,16 +92,13 @@ public class FormMishapActivity extends AppCompatActivity  {
                 String date = DateFormat.getDateInstance(DateFormat.SHORT).format(dateAndroid);
                 String title = titleMishap.getText().toString();
                 String building = buildingMishap.getText().toString();
-
-                /*
-                Location localisation =  gps2Activity.getPosition();
+/*
                 Double doubleLatitude = localisation.getLatitude();
                 Double doubleLongitude = localisation.getLongitude();
 
                 String latitude = doubleLatitude.toString();
                 String longitude = doubleLongitude.toString();
-                */
-
+*/
                 Map<String,String> mishapForFirestore = new HashMap<>();
                 mishapForFirestore.put("location",location);
                 mishapForFirestore.put("description",description);
