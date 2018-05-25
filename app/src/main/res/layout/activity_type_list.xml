@@ -16,9 +16,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="10dp"
-        android:text="          Veuillez choisir un type d'incident"
+        android:text="Veuillez choisir un type d'incident"
         android:textSize="18dp"
         android:textStyle="bold"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
