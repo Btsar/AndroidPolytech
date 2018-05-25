@@ -15,10 +15,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
         android:text="Veuillez choisir un type d'incident"
         android:textSize="18dp"
-        android:gravity="center"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,17 +28,17 @@
         android:id="@+id/buttonOrdi"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/ordi"
-        app:layout_constraintEnd_toEndOf="@+id/buttonImpr"
+        app:layout_constraintStart_toStartOf="@+id/buttonImpr"
         app:layout_constraintTop_toBottomOf="@+id/buttonImpr" />
 
     <Button
         android:id="@+id/buttonChauff"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/chauff"
         app:layout_constraintStart_toStartOf="@+id/textView2"
@@ -48,26 +48,31 @@
         android:id="@+id/buttonImpr"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/impr"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCafe"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCafe" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonCafe"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/buttonElec"
+        app:layout_constraintTop_toTopOf="@+id/buttonElec" />
 
     <Button
         android:id="@+id/buttonProbl"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/probl"
-        app:layout_constraintEnd_toEndOf="@+id/buttonOrdi"
-        app:layout_constraintTop_toBottomOf="@+id/buttonOrdi" />
+        app:layout_constraintStart_toStartOf="@+id/buttonCafe"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCafe" />
 
     <Button
         android:id="@+id/buttonCafe"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/cafe"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
@@ -77,27 +82,28 @@
         android:id="@+id/buttonAutres"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/autres"
-        app:layout_constraintEnd_toEndOf="@+id/buttonChat"
-        app:layout_constraintTop_toBottomOf="@+id/buttonChat" />
+        app:layout_constraintStart_toStartOf="@+id/buttonElec"
+        app:layout_constraintTop_toBottomOf="@+id/buttonElec" />
 
     <Button
         android:id="@+id/buttonElec"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
         android:background="@drawable/elec"
-        app:layout_constraintEnd_toEndOf="@+id/buttonChauff"
-        app:layout_constraintTop_toBottomOf="@+id/buttonChauff" />
+        app:layout_constraintStart_toEndOf="@+id/buttonChauff"
+        app:layout_constraintTop_toTopOf="@+id/buttonChauff" />
 
     <Button
         android:id="@+id/buttonChat"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/chats"
-        app:layout_constraintEnd_toEndOf="@+id/buttonElec"
-        app:layout_constraintTop_toBottomOf="@+id/buttonElec" />
+        app:layout_constraintStart_toStartOf="@+id/buttonChauff"
+        app:layout_constraintTop_toBottomOf="@+id/buttonChauff" />
 
 </android.support.constraint.ConstraintLayout>
