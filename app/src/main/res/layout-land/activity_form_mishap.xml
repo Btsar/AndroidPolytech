@@ -134,7 +134,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Infiniment" />
+            android:text="Haute" />
 
     </RadioGroup>
 
@@ -159,7 +159,7 @@
         android:layout_marginLeft="60dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="60dp"
-        android:background="@layout/imageview_border"
+        android:background="@color/fondZoneText"
         android:ems="10"
         android:inputType="textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
